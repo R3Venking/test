@@ -23,11 +23,11 @@ public class CutString {
             }
             byte[] bt = str.getBytes("gbk");
             if(bt[len]<0){
-                String subString = new String(bt,0,--len);
+                String subString = new String(bt,0,--len,"gbk");
                 System.out.println(subString);
             }
             else{
-                String subString = new String(bt,0,len);
+                String subString = new String(bt,0,len,"gbk");
                 System.out.println(subString);
             }
         } catch (UnsupportedEncodingException ex) {
